@@ -65,9 +65,16 @@
         <section class="section hero">
             <div class="container">
                 <h1 class="hero-head">Эффективные решения<br> для вашего бизнеса</h1>
-                <button type="button" class="btn">Заказать услугу</button>
+                <button type="button" class="btn" data-modal-open>Заказать услугу</button>
+            </div>
+            <div class="backdrop is-hidden" data-modal>
+                <div class="modal">
+                    <button type="button" class="close" data-modal-close> 
+                    </button>
+                </div>
             </div>
         </section>
+        
         <!-- Основне -->
         <section class="section">
             <div class="container">
@@ -114,15 +121,24 @@
         </section>
         <section class="section section-to-do container">
             <h2 class="head-main">Чем мы занимаемся</h2>
-            <ul class="list job-picture">
+            <ul class="list job-pictures">
                 <li class="job-picture-comp">
                     <img src="./images/work1.jpg" alt="Работа за компютером" width="370">
+                    <div class="job-picture-comp-div">
+                        <p class="job-picture-comp-explain">Десктопные приложения</p>
+                    </div>
                 </li>
                 <li class="job-picture-comp">
                     <img src="./images/work2.jpg" alt="Работа за компютером" width="370">
+                    <div class="job-picture-comp-div">
+                        <p class="job-picture-comp-explain">Мобильные приложения</p>
+                    </div>
                 </li>
                 <li class="job-picture-comp">
                     <img src="./images/work3.jpg" alt="Работа за компютером" width="370">
+                    <div class="job-picture-comp-div">
+                        <p class="job-picture-comp-explain">Дизайнерские решения</p>
+                    </div>
                 </li>
             </ul>
         </section>
@@ -369,6 +385,7 @@
                 </address>
             </div>
         </footer>
+        <script src="./modal.js"></script>
 </body>
 
 </html>
